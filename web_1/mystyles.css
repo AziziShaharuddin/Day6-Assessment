@@ -1,0 +1,210 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+:root {
+    --title-font-size: 35px;
+    --subtitle-font-size: 15px;
+    --day-font-size: 14px;
+    --primary-color: #333333;
+    --secondary-color: #848484;
+}
+html, body {
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    font-family: 'Be Vietnam Pro';
+}
+img {
+    max-width: 100%;
+}
+#apps {
+    margin: 0 auto;
+}
+#apps section {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#apps > section:nth-child(even) {
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+#apps > section:nth-child(odd) {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+header {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.description {
+    text-align: justify;
+}
+.page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.page-header h3 {
+    margin: 10px 0;
+    font-size: var(--title-font-size);
+}
+.page-header p {
+    font-size: var(--day-font-size);
+    font-style: italic;
+    color: var(--secondary-color);
+}
+.band-list {
+    margin:  20px 0;
+}
+.page1 {
+    text-align: center;
+    display: block;
+}
+.page1-desktop {
+    display: none;
+}
+.page2, .page4 {
+    margin: 0 auto;
+}
+.page3 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+.form {
+    text-align: left;
+    /* padding: 20px 0; */
+    background-color: white;
+    color: gray;
+    /* border: 1px solid gainsboro; */
+}
+.form button {
+    padding: 5px 10px;
+    margin: 0 20px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+.form p {
+    padding: 8px 10px;
+    border: 1px solid gainsboro;
+    font-size: var(--day-font-size);
+}
+.tour-content {
+    margin: 50px 0;
+}
+.tour-list {
+    background-color: white;
+    color: black;
+    margin: 20px 0;
+    font-size: var(--day-font-size);
+}
+.tour-desc {
+    text-align: left;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+span {
+    color: var(--secondary-color);
+}
+.tour-desc button {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.tour-desc * {
+    margin: 10px 0;
+}
+.contact-deets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.contact-deets * {
+    margin: 5px 15px;
+}
+.page4 button {
+    float: right;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center; */
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    background-color: black;
+    color: white;
+}
+.footer-logo {
+    text-align: center;
+    padding: 30px;
+    color: var(--secondary-color);
+}
+.footer-logo a {
+    color: var(--secondary-color);
+}
+.footer-logo > * {
+    margin: 10px 0;
+}
+@media (max-width: 280px) {
+    #apps {
+        min-width: 280px;
+    }
+}
+@media (min-width: 780px) {
+    .page2, .page3, .page4 {
+        max-width: 780px;
+    }
+    .page-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .page-body > * {
+        width: calc(100%/2);
+    }
+    .tour-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .tour-list {
+        margin: 0 10px;
+    }
+    .page-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .band-list {
+        margin: 50px 10px;
+    }
+}
+@media (min-width: 1000px) {
+    .page1 {
+        display: none;
+    }
+    .page1-desktop {
+        display: block;
+    }
+} 
